@@ -9,7 +9,6 @@ node('maven') {
 	
 	
 	stage('Archive') {
-    // some block
 				archive 'target/*.war'
 				junit 'target/surefire-reports/*.xml'
 				}
